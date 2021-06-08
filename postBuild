@@ -1,0 +1,9 @@
+# jupyter --paths
+# jupyter kernelspec list
+# cat /srv/conda/envs/notebook/share/jupyter/kernels/xcpp17/kernel.json
+
+export CC=gcc-8
+export CXX=g++-8
+
+cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
+cd /tmp && wget -q --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.72.0/source/boost_1_72_0.tar.gz && tar xf boost_1_72_0.tar.gz
