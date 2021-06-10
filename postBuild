@@ -1,4 +1,6 @@
 git clone --recursive https://github.com/LLNL/metall.git
 
-cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
-cd /tmp && wget -q --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz && tar xf boost_1_75_0.tar.gz && rm -f boost_1_75_0.tar.gz
+wget -q --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz
+tar xf boost_1_75_0.tar.gz
+rm -f boost_1_75_0.tar.gz
+mv boost_1_75_0 boost
