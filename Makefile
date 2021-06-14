@@ -10,7 +10,7 @@ objects = t0 t1-1 t1-2 t2-1 t2-2 t3 t4-1 t4-2 t5-1 t5-2_create t5-2_open
 all: $(objects)
 
 $(objects): %: %.cpp
-	$(CXX) $(CPPFLAGS) $(LDLIBS) -o $@ $<
+	$(CXX) $< $(CPPFLAGS) $(LDLIBS) -o $@
 
 clean:
 	/bin/rm -f $(objects)
